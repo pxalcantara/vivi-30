@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+nav {
+  width: 100%;
+  padding-top: 1rem;
+
+  background-image: url(./images/aniversario.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.profile_bar {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.profile_menu {
+  background-color: white;
+  height: auto;
+
+  padding: 0.5rem;
+  margin-top: 1px;
+  border-bottom: 1px solid #555;
+}
+
+.profile_title {
+  min-height: 20px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+}
+/* .profile_menu {
+  display: flex;
+} */
+
+.profile_image {
+  width: 10rem;
+  border-radius: 50%;
+}
+
+nav h1 {
+  color: royalblue;
+
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  color: rgb(37, 37, 37);
+  font-weight: 500;
+}
+
+a {
+  color: #555;
+  text-decoration: none;
+  font-size: 1rem;
+  /* border: 2px solid black; */
+}
