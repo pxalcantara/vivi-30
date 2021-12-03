@@ -5,6 +5,7 @@
 html,
 body {
   height: 100%;
+  font-family: 'PT-sans', sans-serif;
 }
 
 nav {
@@ -49,12 +50,13 @@ ul {
 .profile_image {
   width: 10rem;
   border-radius: 50%;
+  border: 2px solid white;
 }
 
-nav h1 {
+h1 {
   color: royalblue;
 
-  margin-bottom: 0.5rem;
+  margin: 0.5rem 0;
 }
 
 h3 {
@@ -67,4 +69,72 @@ a {
   text-decoration: none;
   font-size: 1rem;
   /* border: 2px solid black; */
+}
+
+.container_info {
+  display: flex;
+  align-items: flex-start;
+  margin-right: 1rem;
+
+  /* position: relative; */
+}
+
+.info_box {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin-left: 1rem;
+
+  flex-basis: 300rem;
+
+  align-self: flex-start;
+  position: sticky;
+  overflow-y: auto;
+}
+
+p {
+  margin: 1rem;
+}
+
+.info_box p {
+  width: auto;
+  margin: 0.5rem 0;
+
+  text-align: left;
+}
+
+.info_box a {
+  background-color: turquoise;
+  width: 100%;
+  min-height: 1.5rem;
+
+  padding: 4px 0;
+  border-radius: 4px;
+
+  text-align: center;
+}
+
+main {
+  text-align: center;
+  position: relative;
+}
+
+main h1 {
+  margin: 1rem;
+}
+
+.sectionColabore div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sectionColabore img {
+  width: 200px;
+  height: 200px;
 }
