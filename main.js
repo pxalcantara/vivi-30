@@ -1,3 +1,5 @@
+const targetMoney = 50
+
 class Supporter {
   constructor(name, anonimous, value) {
     this.name = name
@@ -6,14 +8,28 @@ class Supporter {
   }
 }
 
-function updateProgressBar(progressBar, value) {
-  value = Math.round(value)
-  progressBar.style.width = `${value}%`
+function getPercentageValue(value) {
+  let percentage = (value / targetMoney) * 100.0
+  return percentage
 }
 
-function updateRealValue(valueTarget, value) {
+function updateProgressBar(progressBarTag, value) {
+  percentage = getPercentageValue(value)
+  progressBarTag.style.width = `${percentage}%`
+}
+
+function updateRealValue(realValueTag, value) {
   value = Math.round(value)
-  valueTarget.textContent = `R$ ${value},00`
+  realValueTag.textContent = `R$ ${value},00`
+}
+
+function updatePercentageValue(percentageValueTag, value) {
+  percentage = getPercentageValue(value)
+  percentageValueTag.textContent = `(${percentage}% alcançado)`
+}
+
+function updateSupportersNumber(suporttersNumberTag, value) {
+  suporttersNumberTag.textContent = `${value} apoiadores`
 }
 
 function getSupportersData(supporters) {
@@ -26,20 +42,24 @@ function getSupportersData(supporters) {
   return value
 }
 
-let colaboration_array = []
+let colaborationArray = []
 
-let person1 = new Supporter('Carlos Jr', false, 30)
-colaboration_array.push(person1)
+let person1 = new Supporter('Carlos Jr', false, 25)
+colaborationArray.push(person1)
 
-let person2 = new Supporter('Juan X', false, 50)
-colaboration_array.push(person2)
+let person2 = new Supporter('Juan X', false, 0)
+colaborationArray.push(person2)
 
-const valueProgressBar = document.querySelector('#progress_fill')
-const realValue = document.querySelector('#real_value')
+let person3 = new Supporter('Jorge', false, 20)
+colaborationArray.push(person3)
 
-let value = getSupportersData(colaboration_array)
-updateProgressBar(valueProgressBar, value)
-updateRealValue(realValue, value)
-// for (let x of colaboration_array) {
-//   console.log(x.name)
-// }
+const progressBarTag = document.querySelector('#progress_fill')
+const realValueTag = document.querySelector('#real_value')
+const percentageValueTag = document.querySelector('#percentage_value')
+const supporterNumberTag = document.querySelector('#suportters_number')
+
+let value = getSupportersData(colaborationArray)
+updateProgressBar(progressBarTag, 25)
+updateRealValue(realValueTag, value)
+updatePercentageValue(percentageValueTag, value)
+updateSupportersNumber(supporterNumberTag, colaborationArray.length)
