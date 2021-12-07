@@ -244,7 +244,7 @@ main {
 .supporters_container {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 32px;
 
   /* padding-left: 1.5rem; */
   margin-bottom: 36px;
@@ -260,7 +260,7 @@ main {
   flex-direction: column;
   justify-content: space-around;
   align-content: flex-start;
-  width: 300px;
+  width: 40%;
 }
 
 .quotation {
@@ -273,7 +273,7 @@ main {
 }
 
 .supporter_card p {
-  margin: 0 2px 8px 2px;
+  margin: 16px 2px 8px 2px;
   /* text-align: center; */
   color: #4f4f4f;
 }
@@ -290,18 +290,54 @@ main {
   justify-content: space-between;
 }
 
+.table_container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 36px;
+}
+
+.budget_text {
+  margin-bottom: 24px;
+}
+
 .demo {
   border: 2px solid #c0c0c0;
   border-collapse: collapse;
   border-spacing: 3px;
   padding: 5px;
+  /* text-align: center; */
+}
+
+.demo caption {
+  font-weight: 500;
+  font-size: 18px;
 }
 .demo th {
-  border: 2px solid #c0c0c0;
+  border: 2px solid #4f4f4f;
   padding: 5px;
-  background: #f0f0f0;
 }
 .demo td {
   border: 2px solid #c0c0c0;
   padding: 5px;
+}
+
+footer {
+  background-color: gray;
+  height: 100px;
+
+  color: #f2f2f2;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  /* line-height: 22px; */
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+  font-size: 14px;
 }

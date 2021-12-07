@@ -1,4 +1,5 @@
-const targetMoney = 50
+const targetMoney = 1830
+const end_date = new Date('12/19/2021 11:00 PM').getTime()
 
 class Supporter {
   constructor(name, anonimous, value, msg, date) {
@@ -47,6 +48,19 @@ function getSupportersData(supporters) {
   return value
 }
 
+function updapteRemainTime(remainTimeTag) {
+  let now = new Date().getTime()
+
+  let x = setInterval(function () {
+    let now = new Date().getTime()
+
+    let distance = end_date - now
+
+    let days = Math.floor(distance / (1000 * 60 * 60 * 24))
+    remainTimeTag.textContent = `${days} dias restantes`
+  }, 60000)
+}
+
 function updateSupporterCards(supporterContainerTag, supporters) {
   for (const person in supporters) {
     const card = document.createElement('div')
@@ -84,27 +98,28 @@ function updateSupporterCards(supporterContainerTag, supporters) {
 let colaborationArray = []
 
 let person1 = new Supporter(
-  'Carlos Jr',
+  'Pedro Xavier',
   false,
-  5,
-  'Muito interessante',
-  '11/12/21'
+  100,
+  'Uma iniciativa dessa não poderia deixar de apoiar!',
+  '07/12/21'
 )
 colaborationArray.push(person1)
 
-let person2 = new Supporter('Vivia Paim', false, 20, 'Parabéns', '05/12/21')
-colaborationArray.push(person2)
+// let person2 = new Supporter('Vivia Paim', false, 20, 'Parabéns', '05/12/21')
+// colaborationArray.push(person2)
 
-let person3 = new Supporter('Jorge', true, 00, '', '13/12/21')
-colaborationArray.push(person3)
+// let person3 = new Supporter('Jorge', true, 00, '', '13/12/21')
+// colaborationArray.push(person3)
 
-let person4 = new Supporter('Clara', false, 10, '', '03/12/21')
-colaborationArray.push(person4)
+// let person4 = new Supporter('Clara', false, 10, '', '03/12/21')
+// colaborationArray.push(person4)
 
 const progressBarTag = document.querySelector('#progress_fill')
 const realValueTag = document.querySelector('#real_value')
 const percentageValueTag = document.querySelector('#percentage_value')
 const supporterNumberTag = document.querySelector('#suportters_number')
+const remainTimerTag = document.querySelector('#remain_time')
 const cardContainer = document.querySelector('.supporters_container')
 
 let value = getSupportersData(colaborationArray)
@@ -112,4 +127,5 @@ updateProgressBar(progressBarTag, value)
 updateRealValue(realValueTag, value)
 updatePercentageValue(percentageValueTag, value)
 updateSupportersNumber(supporterNumberTag, colaborationArray.length)
+updapteRemainTime(remainTimerTag)
 updateSupporterCards(cardContainer, colaborationArray)
