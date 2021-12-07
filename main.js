@@ -31,11 +31,11 @@ function updateRealValue(realValueTag, value) {
 
 function updatePercentageValue(percentageValueTag, value) {
   percentage = getPercentageValue(value)
-  percentageValueTag.textContent = `(${percentage}% alcançado)`
+  percentageValueTag.textContent = ` ${percentage}% `
 }
 
 function updateSupportersNumber(suporttersNumberTag, value) {
-  suporttersNumberTag.textContent = `${value} apoiadores`
+  suporttersNumberTag.textContent = `apoiado por ${value} pessoas`
 }
 
 function getSupportersData(supporters) {
@@ -50,8 +50,12 @@ function getSupportersData(supporters) {
 function updateSupporterCards(supporterContainerTag, supporters) {
   for (const person in supporters) {
     const card = document.createElement('div')
+    const quotation_simbol = document.createElement('div')
+    quotation_simbol.classList.add('quotation')
+    quotation_simbol.textContent = ' “ '
     card.classList.add('supporter_card')
     const card_name = document.createElement('span')
+    card_name.classList.add('card_name')
     const card_msg = document.createElement('p')
     const em_tag = document.createElement('em')
     card_msg.append(em_tag)
@@ -69,9 +73,9 @@ function updateSupporterCards(supporterContainerTag, supporters) {
     }
     card_date.textContent = `${supporters[person].date}`
     em_tag.textContent = `${supporters[person].msg}`
-    card_value.textContent = `Doado: R$ ${supporters[person].value},00`
+    card_value.textContent = `R$ ${supporters[person].value},00`
 
-    card.append(card_name, card_msg, card_info)
+    card.append(quotation_simbol, card_msg, card_name, card_info)
     card_info.append(card_value, card_date)
     supporterContainerTag.append(card)
   }
@@ -91,7 +95,7 @@ colaborationArray.push(person1)
 let person2 = new Supporter('Vivia Paim', false, 20, 'Parabéns', '05/12/21')
 colaborationArray.push(person2)
 
-let person3 = new Supporter('Jorge', false, 20, '', '13/12/21')
+let person3 = new Supporter('Jorge', true, 00, '', '13/12/21')
 colaborationArray.push(person3)
 
 let person4 = new Supporter('Clara', false, 10, '', '03/12/21')
