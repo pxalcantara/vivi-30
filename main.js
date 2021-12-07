@@ -58,7 +58,7 @@ function updapteRemainTime(remainTimeTag) {
 
     let days = Math.floor(distance / (1000 * 60 * 60 * 24))
     remainTimeTag.textContent = `${days} dias restantes`
-  }, 60000)
+  }, 1000)
 }
 
 function updateSupporterCards(supporterContainerTag, supporters) {

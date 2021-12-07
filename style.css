@@ -8,7 +8,7 @@ body {
   font-family: Quicksand;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 25px;
   background-color: #f2f2f2;
 }
@@ -39,7 +39,7 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 80px;
+  gap: 120px;
 
   margin-bottom: 123px;
 }
@@ -53,10 +53,12 @@ ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 157px;
+  gap: 250px;
   list-style: none;
 
-  margin-right: 7rem;
+  font-size: 24px;
+
+  margin-right: 220px;
 }
 
 .profile_image {
@@ -237,8 +239,8 @@ main {
 }
 
 .sectionColabore img {
-  width: 136px;
-  height: 136px;
+  width: 180px;
+  height: 180px;
 }
 
 .supporters_container {
@@ -328,7 +330,7 @@ footer {
   color: #f2f2f2;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   /* line-height: 22px; */
 
   display: flex;
@@ -339,5 +341,5 @@ footer {
 footer a {
   color: white;
   text-decoration: underline;
-  font-size: 14px;
+  font-size: 16px;
 }
