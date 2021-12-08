@@ -1,4 +1,4 @@
-const targetMoney = 1830
+const targetMoney = 1675.2
 const end_date = new Date('12/19/2021 11:00 PM').getTime()
 
 class Supporter {
