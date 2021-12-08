@@ -100,35 +100,37 @@ a {
 p {
   /* margin: 1rem; */
   text-align: left;
-  margin-bottom: 56px;
+  margin-bottom: 2.125rem;
 }
 
 p a {
   text-decoration: none;
   color: #024979;
 }
+
 .container_info {
-  display: flex;
-  align-items: center;
-  margin: 0 4rem;
+  /* display: flex;
+  align-items: center; */
+  margin: 0 1.5rem;
 }
 
 .info_box {
   display: flex;
   flex-direction: column;
 
-  padding: 1rem;
+  /* padding: 1rem; */
   /* border: 1px solid black; */
   border-radius: 16px;
   /* margin-left: 1rem; */
+  margin-bottom: 1rem;
 
-  flex-basis: 408px;
+  /* flex-basis: 408px; */
   gap: 23px;
 
-  position: sticky;
+  /* position: sticky;
   top: 0;
   align-self: flex-start;
-  overflow-y: auto;
+  overflow-y: auto; */
 }
 
 .info_box p,
@@ -209,8 +211,14 @@ p a {
 main {
   text-align: center;
   position: relative;
-  padding: 0 32px 0 0;
-  width: 65%;
+  /* padding: 0 32px 0 0;
+  width: 65%; */
+}
+
+main img {
+  text-align: center;
+  max-width: 100%;
+  height: auto;
 }
 
 .legend {
@@ -309,30 +317,33 @@ main {
   border-collapse: collapse;
   border-spacing: 3px;
   padding: 5px;
-  /* text-align: center; */
+  text-align: center;
+
+  /* font-size: 1rem; */
 }
 
 .demo caption {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1rem;
 }
 .demo th {
   border: 2px solid #4f4f4f;
-  padding: 5px;
+  /* padding: 3px; */
 }
 .demo td {
   border: 2px solid #c0c0c0;
-  padding: 5px;
+  /* padding: 3px; */
 }
 
 footer {
   background-color: gray;
-  height: 100px;
+  min-height: auto;
+  width: 100%;
 
   color: #f2f2f2;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  /* font-size: 16px; */
   /* line-height: 22px; */
 
   display: flex;
@@ -343,5 +354,5 @@ footer {
 footer a {
   color: white;
   text-decoration: underline;
-  font-size: 16px;
+  font-size: 1rem;
 }
