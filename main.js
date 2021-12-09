@@ -115,11 +115,17 @@ let person2 = new Supporter(
 )
 colaborationArray.push(person2)
 
-// let person3 = new Supporter('Jorge', true, 00, '', '13/12/21')
-// colaborationArray.push(person3)
+let person3 = new Supporter(
+  'Fátima Sueli',
+  false,
+  200,
+  'Adorei a iniciativa, parabéns!',
+  '09/12/21'
+)
+colaborationArray.push(person3)
 
-// let person4 = new Supporter('Clara', false, 10, '', '03/12/21')
-// colaborationArray.push(person4)
+let person4 = new Supporter('Amanda Fechine', false, 80, '', '09/12/21')
+colaborationArray.push(person4)
 
 const progressBarTag = document.querySelector('#progress_fill')
 const realValueTag = document.querySelector('#real_value')
