@@ -97,14 +97,14 @@ function updateSupporterCards(supporterContainerTag, supporters) {
 
 let colaborationArray = []
 
-let person1 = new Supporter(
-  'Pedro Xavier',
-  false,
-  100,
-  'Uma iniciativa dessa não poderia deixar de apoiar!',
-  '07/12/21'
-)
-colaborationArray.push(person1)
+// let person1 = new Supporter(
+//   'Pedro Xavier',
+//   false,
+//   100,
+//   'Uma iniciativa dessa não poderia deixar de apoiar!',
+//   '07/12/21'
+// )
+// colaborationArray.push(person1)
 
 // let person2 = new Supporter('Vivia Paim', false, 20, 'Parabéns', '05/12/21')
 // colaborationArray.push(person2)
