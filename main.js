@@ -97,6 +97,7 @@ function updateSupporterCards(supporterContainerTag, supporters) {
 
 let colaborationArray = []
 
+//  ===== Doações ================
 let person1 = new Supporter(
   'Pedro Xavier',
   false,
@@ -126,6 +127,17 @@ colaborationArray.push(person3)
 
 let person4 = new Supporter('Amanda Fechine', false, 80, '', '09/12/21')
 colaborationArray.push(person4)
+
+let person5 = new Supporter(
+  'Samir Fortunato',
+  false,
+  500,
+  'Lindona, que iniciativa massa, parabéns!',
+  '09/12/21'
+)
+colaborationArray.push(person5)
+
+// ===================================================
 
 const progressBarTag = document.querySelector('#progress_fill')
 const realValueTag = document.querySelector('#real_value')
