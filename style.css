@@ -407,3 +407,16 @@ footer a {
 .fix_botton a {
   font-size: 16px;
 }
+
+/* @media (width >= 60rem) {
+  .container_info {
+    max-width: 60vw;
+    margin: 0 auto 5rem;
+  }
+  .fix_botton {
+    bottom: 3rem;
+    right: unset;
+    left: 50vw;
+    margin-left: -9.75rem;
+  }
+} */

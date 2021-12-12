@@ -32,7 +32,8 @@ function updateRealValue(realValueTag, value) {
 
 function updatePercentageValue(percentageValueTag, value) {
   percentage = getPercentageValue(value)
-  percentageValueTag.textContent = ` ${percentage}% `
+  let kitsNumer = Math.round(value / 55.84)
+  percentageValueTag.textContent = ` ${percentage}% - ${kitsNumer} cestas doadas `
 }
 
 function updateSupportersNumber(suporttersNumberTag, value) {
@@ -63,6 +64,9 @@ function updapteRemainTime(remainTimeTag) {
 
 function updateSupporterCards(supporterContainerTag, supporters) {
   for (const person in supporters) {
+    if (supporters[person].anonimous === true) {
+      continue
+    }
     const card = document.createElement('div')
     const quotation_simbol = document.createElement('div')
     quotation_simbol.classList.add('quotation')
@@ -80,11 +84,7 @@ function updateSupporterCards(supporterContainerTag, supporters) {
     const card_date = document.createElement('span')
     card_date.classList.add('card_date')
 
-    if (supporters[person].anonimous === true) {
-      card_name.textContent = `Anônimo`
-    } else {
-      card_name.textContent = `${supporters[person].name}`
-    }
+    card_name.textContent = `${supporters[person].name}`
     card_date.textContent = `${supporters[person].date}`
     em_tag.textContent = `${supporters[person].msg}`
     card_value.textContent = `R$ ${supporters[person].value},00`
@@ -136,6 +136,90 @@ let person5 = new Supporter(
   '09/12/21'
 )
 colaborationArray.push(person5)
+
+let person6 = new Supporter('Raimundo Alcides', false, 200, '', '09/12/21')
+colaborationArray.push(person6)
+
+let person7 = new Supporter(
+  'Kevin Oliveira',
+  false,
+  50,
+  'Parabéns!',
+  '09/12/21'
+)
+colaborationArray.push(person7)
+
+let person8 = new Supporter('Humberto Alcantara', false, 200, '', '09/12/21')
+colaborationArray.push(person8)
+
+let person9 = new Supporter(
+  'Lea Lopes',
+  false,
+  80,
+  'Foi através de Thais que fiquei sabendo de sua iniciativa. Achei muito massa e quis colaborar também. Espero que dobre a meta!',
+  '09/12/21'
+)
+colaborationArray.push(person9)
+
+let person10 = new Supporter(
+  'Felipe Brayner',
+  false,
+  80,
+  'Parabéns pelo aniversário e iniciativa.',
+  '10/12/21'
+)
+colaborationArray.push(person10)
+
+let person11 = new Supporter(
+  'Nilton Rangel',
+  false,
+  300,
+  'Adorei a idéia.',
+  '10/12/21'
+)
+colaborationArray.push(person11)
+
+let person12 = new Supporter(
+  'Rafael Saback',
+  false,
+  200,
+  'Feliz aniversário Vivis e parabéns pela boa ação.',
+  '11/12/21'
+)
+colaborationArray.push(person12)
+
+let person13 = new Supporter(
+  'David Pires',
+  false,
+  101,
+  'Sempre mais do que Juninho',
+  '11/12/21'
+)
+colaborationArray.push(person13)
+
+let person14 = new Supporter(
+  'Luiz Olympio',
+  false,
+  320,
+  'Orgulho do papai',
+  '09/12/21'
+)
+colaborationArray.push(person14)
+
+let person15 = new Supporter(
+  'Jonilda Conceição',
+  false,
+  100,
+  'Orgulho da mamãe',
+  '09/12/21'
+)
+colaborationArray.push(person15)
+
+let person16 = new Supporter('', true, 100, '', '09/12/21')
+colaborationArray.push(person16)
+
+let person17 = new Supporter('', true, 100, '', '09/12/21')
+colaborationArray.push(person17)
 
 // ===================================================
 
