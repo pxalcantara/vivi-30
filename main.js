@@ -149,7 +149,13 @@ let person7 = new Supporter(
 )
 colaborationArray.push(person7)
 
-let person8 = new Supporter('Humberto Alcantara', false, 200, '', '09/12/21')
+let person8 = new Supporter(
+  'Humberto e Margareth Alcantara',
+  false,
+  200,
+  '',
+  '09/12/21'
+)
 colaborationArray.push(person8)
 
 let person9 = new Supporter(
