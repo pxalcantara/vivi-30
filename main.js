@@ -153,7 +153,7 @@ let person8 = new Supporter(
   'Humberto e Margareth Alcantara',
   false,
   200,
-  '',
+  'Parabéns Vivi! Estamos felizes de poder fazer parte da sua vida! Linda iniciativa! Nossa norinha é pequena por fora, mas tem um coração gigante! Te amamos muito! Bjs',
   '09/12/21'
 )
 colaborationArray.push(person8)
