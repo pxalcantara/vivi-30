@@ -213,7 +213,7 @@ let person14 = new Supporter(
 colaborationArray.push(person14)
 
 let person15 = new Supporter(
-  'Jonilda Conceição',
+  'Jo Paim',
   false,
   100,
   'Orgulho da mamãe',
@@ -226,6 +226,63 @@ colaborationArray.push(person16)
 
 let person17 = new Supporter('', true, 100, '', '09/12/21')
 colaborationArray.push(person17)
+
+let person18 = new Supporter('Vinícius dos Santos', false, 100, '', '12/12/21')
+colaborationArray.push(person18)
+
+let person19 = new Supporter(
+  'Helvecio Neto',
+  false,
+  50,
+  'Parabéns Vivi pela iniciativa.',
+  '12/12/21'
+)
+colaborationArray.push(person19)
+
+let person20 = new Supporter(
+  'Emilly Reale',
+  false,
+  100,
+  'Agradeço a Deus por ter amigos conscientes empáticos e justos. Eu amo isso!',
+  '12/12/21'
+)
+colaborationArray.push(person20)
+
+let person21 = new Supporter('Bruno Oliveira', false, 75, '', '12/12/21')
+colaborationArray.push(person21)
+
+let person22 = new Supporter(
+  'Diego e Laila',
+  false,
+  160,
+  'Felicidades Vivis e belissima atitude. Feliz aniversário e um futuro repleto de realizações',
+  '12/12/21'
+)
+colaborationArray.push(person22)
+
+let person23 = new Supporter('Jonilce Paim', false, 100, '', '12/12/21')
+colaborationArray.push(person23)
+
+let person24 = new Supporter(
+  'Artur Hardmann',
+  false,
+  60,
+  'Feliz Anivesário!',
+  '12/12/21'
+)
+colaborationArray.push(person24)
+
+let person25 = new Supporter('Mirell Motta', false, 60, '', '12/12/21')
+colaborationArray.push(person25)
+
+let person26 = new Supporter(
+  'Rafa e Lu',
+  false,
+  150,
+  'Vivi linda ação, não deixaríamos de apoiar. Feliz aniversário e que Deus de abençoes.',
+  '12/12/21'
+)
+colaborationArray.push(person26)
 
 // ===================================================
 
