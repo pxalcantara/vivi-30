@@ -16,6 +16,7 @@ function getPercentageValue(value) {
   return Math.round(percentage)
 }
 
+
 function updateProgressBar(progressBarTag, value) {
   percentage = getPercentageValue(value)
   if (percentage > 100) {
@@ -284,6 +285,50 @@ let person26 = new Supporter(
 )
 colaborationArray.push(person26)
 
+let person27 = new Supporter(
+  'Paulo Bassan',
+  false,
+  100,
+  '',
+  '16/12/21'
+)
+colaborationArray.push(person27)
+
+let person28 = new Supporter(
+  'Aninha Jesus',
+  false,
+  100,
+  'Vivi, feliz aniversário e parabéns por ser esse ser humano incrível. Beijão',
+  '15/12/21'
+)
+colaborationArray.push(person28)
+
+let person29 = new Supporter(
+  'Virgínia ',
+  false,
+  200,
+  'Parabéns pela iniciativa Vivian, felicidades sempre',
+  '19/12/21'
+)
+colaborationArray.push(person29)
+
+let person30 = new Supporter(
+  'Gracinha ',
+  false,
+  80,
+  '',
+  '19/12/21'
+)
+colaborationArray.push(person30)
+
+let person31 = new Supporter(
+  'Thais Paim ',
+  false,
+  122,
+  'Para fechar o ano, essa campanha maravilhosa! Conte comigo sempre',
+  '19/12/21'
+)
+colaborationArray.push(person31)
 // ===================================================
 
 const progressBarTag = document.querySelector('#progress_fill')
