@@ -329,6 +329,15 @@ let person31 = new Supporter(
   '19/12/21'
 )
 colaborationArray.push(person31)
+
+let person32 = new Supporter(
+  'Branilson Luiz ',
+  false,
+  75,
+  '',
+  '27/12/21'
+)
+colaborationArray.push(person32)
 // ===================================================
 
 const progressBarTag = document.querySelector('#progress_fill')
